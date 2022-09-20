@@ -1,0 +1,16 @@
+input{
+    background-color: pink;
+}
+
+#submit{
+    background: white;
+    color: green;
+}
+
+.ss{
+    color: skyblue;
+}
+
+input:hover{
+    text-decoration: line-through;
+}
