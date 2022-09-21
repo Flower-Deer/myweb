@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="out0.css">
+    <style>
+        textarea{
+            background-color: aqua;
+        }
+        
+        #find{
+            background: black;
+            color: white;
+        }
+
+        #number{
+            background-color: blueviolet;
+        }
+
+        #email{
+            background: sandybrown;
+        }
+
+        .login{
+            background: blue;
+            color: wheat;
+        }
+
+        .submit{
+            background: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <from>
+        <h3>검색할 단어를 입력하세요.</h3>
+        <hr>
+        검색할 단어 <input type="text" name="find" id="find">
+        <button>검색 시작</button>
+    </from>
+    
+    <hr>
+
+    <form action="check"> <!--아이디 체크 -->
+        <h3>로그인 화면</h3>
+        아이디 <input type="text" name="id" class="login"> <br>
+        패스워드 <input type="password" name="pw" class="login"> <br>
+        이메일 <input type="email" name="email" id="email"> <br>
+        <input type="submit" value="로그인 처리" class="submit">
+        <!-- 이클립스 단축기 ctrl + alt + 아래화살표: 한줄복사 -->
+        <!-- 이클립스 단축기 ctrl + d : 한줄삭제 -->
+        <!-- 이클립스 단축기 alt + 화살표아래 : 한줄이동! -->
+    </form>
+    
+    <hr>
+    
+    <form>
+        <h3>회원가입 화면</h3>
+        가입할id <input type="text" name="id"> <br>
+        가입할pw <input type="password" name="pw"> <br>
+        가입할name <input type="text" name="name" placeholder="이름 성순서대로"> <br>
+        성별 <input type="radio" name="gender" value="man" checked>남자
+             <input type="radio" name="gender" value="woman">여자
+        <br>
+        취미 <input type="checkbox" name="hobby" value="run">달리기
+             <input type="checkbox" name="hobby" value="youtube" checked>동영상보기
+             <input type="checkbox" name="hobby" value="internet">인터넷서핑
+        <br>
+        전화번호 통신사
+        <select name="tel">
+            <option value="sktelecom">SKT</option>
+            <option value="etctele" selected>알뜰폰</option>
+            <option value="letelecom">LGT</option>
+        </select>
+        <input type="number" name="number" id="number" placeholder="-없이 숫자로 이어쓰세요.">
+        <br>
+        생년월일 <input type="date"> <br>
+        가입한 시기 <input type="datetime-local">
+        <br>
+        하고 싶은 말
+        <textarea name="word"
+                  cols="30"
+                  rows="10"
+                  placeholder="100글자 이내로 써주세요."
+                  ></textarea> <br>
+        <input type="submit" value="회원가입 처리" class="submit">
+    </form>
+</body>
+</html>
