@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $('#b1').click(function () {
+                in1 = $('#in1').val()
+                in2 = $('#in2').val()
+                $('#d1').html('오늘은 ' + in1 + '을 먹고, 내일은 ' + in2 + '을 먹겠어!')
+            })
+            $('#b2').click(function () {
+                in3 = $('#in3').val()
+                in4 = $('#in4').val()
+                $('#d1').html('오늘은 '+ in3 + '도 인데, ' + in4 + '이군!')
+            })
+        })
+    </script>
+</head>
+<body>
+    -먹고 싶은 음식: <input id="in1" value="아이스커피"><br>
+    -먹기 싫은 밥: <input id="in2" value="밥"><br>
+    <button id="b1">뭐 먹지??</button>
+    <hr>
+    -오늘의 온도는: <input id="in3" value="25"><br>
+    -오늘은 무슨요일인가: <input id="in4" value="목요일"><br>
+    <button id="b2">날씨가 어떤가요?</button>
+    <hr>
+    <div id="d1"></div>
+</body>
+</html>
