@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function user() {
+            id = document.getElementById('id').value
+            if (id == 'root') {
+                result = '아이디 성공'
+            }else {
+                result = '아이디 실패'
+            }
+            d1.innerHTML = result
+        }
+        function naver() {
+            location.href = ("https://www.naver.com/")
+
+        }
+        function webtoon() {
+            wt = document.getElementById('wt').value
+            if (wt == '독립일기'){
+                return location.href = ("https://comic.naver.com/webtoon/list?titleId=748105")
+            }else{
+                alert('다시 입력해주세요')
+            }
+        }
+    </script>
+</head>
+<body>
+    아이디 <input type="text" id="id" onblur="user()" > <button onclick="user()">아이디 버튼</button> <br>
+    <div id="d1" style= "color: red;"></div>
+    <hr>
+    지식인 검색어 <input type="text" id="naver" onblur="naver()"> <button onclick="naver()">검색버튼</button>
+    <hr>
+    보고 싶은 웹툰 입력 <input type="text" id="wt" onblur="webtoon()"> <button onclick="webtoon()">웹툰 검색</button>
+</body>
+</html>
